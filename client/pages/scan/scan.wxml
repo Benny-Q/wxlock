@@ -1,0 +1,14 @@
+<!--pages/scan/scan.wxml-->
+<view class="content">   
+  <view class="linepadd">   </view>  
+  <view wx:for="{{list}}" wx:for-item="item"
+          data-deviceid="{{item.deviceId}}"
+          data-name="{{item.name}}"
+          data-uuid="{{item.advertisServiceUUIDs}}"
+          wx:key="{{item.deviceId}}"
+          bindtap="bindVitwTap" >
+          <view class="item"> 设备名称：{{item.name}}  设备ID： {{item.deviceId}}
+          <view class="ss"/>
+          </view>
+  </view>  
+</view>  

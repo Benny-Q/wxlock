@@ -1,0 +1,18 @@
+<!--pages/pwdinput/pwdinput.wxml-->
+<view class="section">
+  <text>输入密码</text>
+  <view class="line"></view>
+  <view class="input-section">
+  <input class="pwdinput" placeholder-style="color:red" placeholder="请输入6-8位锁端密码：" password="true" 
+                                            maxlength="8"
+                                            type="number"
+                                            bindinput="bindKeyInput"
+                                            bindblur="bindKeyBlur"
+                                            auto-focus/>
+  </view>
+
+  <view class="line-gap"></view>
+  <view class="btn-area">
+  <button type="default" class="button" bindtap="bindButtonTap">完成</button>
+  </view>
+</view>

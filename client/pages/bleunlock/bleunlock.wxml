@@ -1,0 +1,8 @@
+<!--pages/bleunlock/bleunlock.wxml-->
+<view class="content">   
+  <view class="linepadd">   </view>  
+  <button type="default" class="buttonScan"  bindtap="buttonScan">搜索设备</button> 
+  <button type="default" class="buttonStop"  bindtap="buttonStop">断开蓝牙连接</button> 
+  <text class="text01">已连接设备： {{deviceName}}</text>
+  <button type="primary" class="buttonUnlock"  bindtap="buttonUnlock">开锁</button> 
+</view> 

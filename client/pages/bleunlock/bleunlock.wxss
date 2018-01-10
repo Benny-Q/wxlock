@@ -1,0 +1,43 @@
+/* pages/bleunlock/bleunlock.wxss */
+.ss {
+  background-color: blue;
+  height: 1rpx;
+  width: 100%;
+}
+
+.item {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  height: 100rpx;
+  width: 100%;
+}
+
+.linepadd {
+  height: 5px;
+}
+
+.button-hover {
+  background-color: red;
+}
+
+.buttonScan {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.buttonStop {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.buttonUnlock {
+  margin-top: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 100px;
+ 
+}

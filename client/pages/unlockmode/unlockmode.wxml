@@ -1,0 +1,7 @@
+<!--pages/unlockmode/unlockmode.wxml-->
+<view class="content">   
+  <view class="linepadd">   </view>  
+  <button type="default" class="button" bindtap="buttonBle">蓝牙开锁</button> 
+  <button type="default" class="button" bindtap="buttonKey">密钥开锁</button>
+
+</view> 

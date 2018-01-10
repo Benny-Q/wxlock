@@ -1,0 +1,14 @@
+/* pages/conn/conn.wxss */
+
+.button-hover {
+  background-color: red;
+  size: 200px;
+}
+
+.linepadd{
+  height: 20px;
+}
+
+.button {
+  margin: 10px;
+}

@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scan/scan",
+    "pages/conn/conn",
+    "pages/about/about",
+    "pages/bleunlock/bleunlock",
+    "pages/keyunlock/keyunlock",
+    "pages/pwdinput/pwdinput",
+    "pages/unlockmode/unlockmode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "卓挚智能锁",
+    "navigationBarTextStyle": "white"
+  }
+}

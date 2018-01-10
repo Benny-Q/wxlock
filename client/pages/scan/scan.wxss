@@ -1,0 +1,19 @@
+/* pages/scan/scan.wxss */
+.ss {
+  background-color: blue;
+  height: 1rpx;
+  width: 100%;
+}
+
+.item {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  height: 100rpx;
+  width: 100%;
+}
+
+.linepadd {
+  height: 5px;
+}

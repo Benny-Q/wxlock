@@ -1,0 +1,19 @@
+<!--index.wxml-->  
+
+<view class="content">   
+
+  <view class="welcome"> 
+    <image 
+      style="width: 100%; height: 200px; background-color: #eeeeee;"
+      mode='aspectFill'
+      src='../../vendor/bg_welcome.jpg'></image>
+  </view>
+  <view class="linepadd">   </view>  
+  <view class="welcome02"> 
+    <text class="wel-text" >欢迎使用卓挚智能门锁</text>
+  </view>
+  <view class="linepadd">   </view>  
+  <button type="default" class="button" bindtap="buttonBle">蓝牙开锁</button> 
+  <button type="default" class="button" bindtap="buttonKey">密钥开锁</button>
+  <button type="default" class="button" bindtap="buttonSet">重置密码</button>
+</view> 

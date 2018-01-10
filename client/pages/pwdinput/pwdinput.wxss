@@ -1,0 +1,14 @@
+/* pages/pwdinput/pwdinput.wxss */
+.line {
+  height: 1px;
+  background-color: gainsboro;
+}
+
+.line-gap {
+  height: 50px;
+}
+
+.input-section {
+  border: 1px;
+  border-color: red;
+}
