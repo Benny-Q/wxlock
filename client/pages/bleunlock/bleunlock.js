@@ -154,13 +154,6 @@ Page({
       deviceId: that.data.deviceID,
       success: function (res) {
         console.log(res)
-        /*wx.showLoading({
-          title: '设备已连接',
-        })
-        setTimeout(function () {
-          wx.hideLoading()
-        }, 500)
-        */
         /*
         *获取设备的特征值
         */
@@ -200,12 +193,15 @@ Page({
             exportB.setLocalDataInfo('myConnCharacteristicsID', that.data.uuid01)
             //console.log("uuid01= " + that.data.uuid01 + "uuid02= " + that.data.uuid02 + "uuid03= " + that.data.uuid03);
 
+            //再次保存设备连接状态,此处设备连接已成功
+            that.setData({ myConnState: true })
+            exportB.setLocalDataInfo('myBleConnState', true)
             console.log("getBLEDeviceCharacteristics: SUCCESS");
             // show tip
             wx.showToast({
               title: "设备已连接",
               duration: 500
-            });
+            }); 
           },  // end success
 
           fail: function (res) {
@@ -255,6 +251,7 @@ Page({
             // complete
           }
         })  // end wx.notifyBLECharacteristicValueChanged
+        
         
         /**
          * 监听低功耗蓝牙连接的事件
@@ -357,10 +354,11 @@ Page({
     }
     //console.log("local password: ", that.data.myLockPwd)
 
-    let buffer_pwd = new ArrayBuffer(16)
+    let password_length = that.data.myLockPwd.length;
+    let buff_len = password_length+5;
+    let buffer_pwd = new ArrayBuffer(buff_len)
     let dataView = new DataView(buffer_pwd)
     var get_str = new String(that.data.myLockPwd)
-    var password_length = that.data.myLockPwd.length;
     //console.log("password_length= ", password_length)
     dataView.setUint8(0, 0x75)
     dataView.setUint8(1, 0x33)
